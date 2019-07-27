@@ -1,7 +1,7 @@
 import fetch from "isomorphic-fetch";
 import Error from "next/error";
-import Layout from '../components/Layout/Layout';
-import CommentList from '../components/CommentList';
+import Layout from '../../components/Layout/Layout';
+import CommentList from '../../components/CommentList';
 
 const story = ({ story }) => {
   
@@ -25,7 +25,7 @@ const story = ({ story }) => {
 };
 
 story.getInitialProps = async ({ req, res, query }) => {
-  const storyId = query.id;
+  const storyId = parseInt(query.id.split('-').pop());
   let story;
   try{
   	const res = await fetch(`https://node-hnapi.herokuapp.com/item/${storyId}`);

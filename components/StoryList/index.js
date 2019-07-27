@@ -7,7 +7,7 @@ const StoryList = ({ stories }) => {
         stories.map(story => (
           <div key={story.id}>
             <h1>{story.title}</h1>
-            <Link href={`/story?id=${story.id}`} as={`/story/${story.title.replace(/\s+/g, '-').toLowerCase()}-${story.id}`}>
+            <Link href="/story/[id]" as={`/story/${story.title.replace(/\s+/g, '-').toLowerCase()}-${story.id}`}>
               <a> View Story </a>
             </Link>
           </div>
