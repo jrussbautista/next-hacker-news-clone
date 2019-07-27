@@ -16,7 +16,7 @@ app.prepare().then(() => {
   server.get('/story/:slug', (req, res) => {
     const id = parseInt(req.params.slug.split('-').pop());
     const queryParams = { id: id };
-    app.render( req, res, '/story', queryParams);
+    return app.render( req, res, '/story', queryParams);
   })
 
   server.get( '*', ( req, res ) => {
