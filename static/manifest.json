@@ -1,0 +1,19 @@
+{
+  "name": "Next Hacker News",
+  "short_name": "Next Hacker News",
+  "lang": "en-US",
+  "display": "standalone",
+  "theme_color": "#ef700b",
+  "icons": [
+    {
+      "src": "/static/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/icon-192x192.png",
+      "sizes": "/static/icons/icon-192x192.png",
+      "type": "image/png"
+    }
+  ]
+}

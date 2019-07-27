@@ -1,17 +1,25 @@
 {
-  "name": "hooks-next-test",
+  "name": "next-hacker-news",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "deploy": "now"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^8.0.3",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^9.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-html-parser": "^2.0.2",
+    "styled-components": "^4.3.2",
+    "sw-precache-webpack-plugin": "^0.11.5"
   }
 }
